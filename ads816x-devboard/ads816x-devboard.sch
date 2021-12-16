@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "ads816x-devboard"
+Date "2021-12-16"
+Rev "2021-12-16"
+Comp "Raphael Lehmann"
+Comment1 "License: CC BY-SA 4.0"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6500 3200 1850 1950
+U 61BAC30D
+F0 "ADC" 50
+F1 "ADC.sch" 50
+F2 "IN0" I L 6500 3300 50 
+F3 "IN1" I L 6500 3400 50 
+F4 "IN2" I L 6500 3500 50 
+F5 "IN3" I L 6500 3600 50 
+F6 "IN4" I L 6500 3700 50 
+F7 "IN5" I L 6500 3800 50 
+F8 "IN6" I L 6500 3900 50 
+F9 "IN7" I L 6500 4000 50 
+F10 "SCK" I R 8350 3600 50 
+F11 "SDI" I R 8350 3500 50 
+F12 "SDO" O R 8350 3700 50 
+F13 "CS" I R 8350 3400 50 
+F14 "~RST" I R 8350 3900 50 
+F15 "ALERT" O R 8350 3300 50 
+F16 "SDO-1" O R 8350 3800 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x09 J1
+U 1 1 61BB6BAF
+P 9200 3700
+F 0 "J1" H 9280 3742 50  0000 L CNN
+F 1 "Conn_01x09" H 9280 3651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 9200 3700 50  0001 C CNN
+F 3 "~" H 9200 3700 50  0001 C CNN
+	1    9200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3300 8350 3300
+Wire Wire Line
+	8350 3400 9000 3400
+Wire Wire Line
+	9000 3500 8350 3500
+Wire Wire Line
+	8350 3600 9000 3600
+Wire Wire Line
+	9000 3700 8350 3700
+Wire Wire Line
+	8350 3800 9000 3800
+Wire Wire Line
+	9000 3900 8350 3900
+Wire Wire Line
+	9000 4100 8900 4100
+Wire Wire Line
+	8900 4100 8900 4200
+Wire Wire Line
+	9000 4000 8900 4000
+Wire Wire Line
+	8900 4000 8900 3100
+$Comp
+L power:+3V3 #PWR03
+U 1 1 61BB91AF
+P 8900 3100
+F 0 "#PWR03" H 8900 2950 50  0001 C CNN
+F 1 "+3V3" H 8915 3273 50  0000 C CNN
+F 2 "" H 8900 3100 50  0001 C CNN
+F 3 "" H 8900 3100 50  0001 C CNN
+	1    8900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61BB96F5
+P 8900 4200
+F 0 "#PWR04" H 8900 3950 50  0001 C CNN
+F 1 "GND" H 8905 4027 50  0000 C CNN
+F 2 "" H 8900 4200 50  0001 C CNN
+F 3 "" H 8900 4200 50  0001 C CNN
+	1    8900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV1
+U 1 1 61BBA0B0
+P 2250 3300
+F 0 "RV1" H 2190 3346 50  0000 R CNN
+F 1 "TC33X-2-302E" H 2190 3255 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 2250 3300 50  0001 C CNN
+F 3 "~" H 2250 3300 50  0001 C CNN
+	1    2250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV2
+U 1 1 61BBBA1D
+P 2500 3550
+F 0 "RV2" H 2440 3596 50  0000 R CNN
+F 1 "TC33X-2-302E" H 2440 3505 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 2500 3550 50  0001 C CNN
+F 3 "~" H 2500 3550 50  0001 C CNN
+	1    2500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV3
+U 1 1 61BBC771
+P 2750 3800
+F 0 "RV3" H 2690 3846 50  0000 R CNN
+F 1 "TC33X-2-302E" H 2690 3755 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 2750 3800 50  0001 C CNN
+F 3 "~" H 2750 3800 50  0001 C CNN
+	1    2750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV4
+U 1 1 61BBF1B4
+P 3000 4050
+F 0 "RV4" H 2940 4096 50  0000 R CNN
+F 1 "TC33X-2-302E" H 2940 4005 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 3000 4050 50  0001 C CNN
+F 3 "~" H 3000 4050 50  0001 C CNN
+	1    3000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV5
+U 1 1 61BBF258
+P 3250 4300
+F 0 "RV5" H 3190 4346 50  0000 R CNN
+F 1 "TC33X-2-302E" H 3190 4255 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 3250 4300 50  0001 C CNN
+F 3 "~" H 3250 4300 50  0001 C CNN
+	1    3250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV6
+U 1 1 61BBF262
+P 3500 4550
+F 0 "RV6" H 3440 4596 50  0000 R CNN
+F 1 "TC33X-2-302E" H 3440 4505 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 3500 4550 50  0001 C CNN
+F 3 "~" H 3500 4550 50  0001 C CNN
+	1    3500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV7
+U 1 1 61BC44BD
+P 3750 4800
+F 0 "RV7" H 3690 4846 50  0000 R CNN
+F 1 "TC33X-2-302E" H 3690 4755 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 3750 4800 50  0001 C CNN
+F 3 "~" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Potentiometer_Small RV8
+U 1 1 61BC459D
+P 4000 5050
+F 0 "RV8" H 3940 5096 50  0000 R CNN
+F 1 "TC33X-2-302E" H 3940 5005 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical" H 4000 5050 50  0001 C CNN
+F 3 "~" H 4000 5050 50  0001 C CNN
+	1    4000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3400 2250 5250
+Wire Wire Line
+	2250 5250 2500 5250
+Wire Wire Line
+	4000 5250 4000 5150
+Wire Wire Line
+	3750 4900 3750 5250
+Connection ~ 3750 5250
+Wire Wire Line
+	3750 5250 4000 5250
+Wire Wire Line
+	3500 4650 3500 5250
+Connection ~ 3500 5250
+Wire Wire Line
+	3500 5250 3750 5250
+Wire Wire Line
+	3250 4400 3250 5250
+Connection ~ 3250 5250
+Wire Wire Line
+	3250 5250 3500 5250
+Wire Wire Line
+	3000 4150 3000 5250
+Connection ~ 3000 5250
+Wire Wire Line
+	3000 5250 3250 5250
+Wire Wire Line
+	2750 5250 2750 3900
+Connection ~ 2750 5250
+Wire Wire Line
+	2750 5250 3000 5250
+Wire Wire Line
+	2500 3650 2500 5250
+Connection ~ 2500 5250
+Wire Wire Line
+	2500 5250 2750 5250
+Wire Wire Line
+	2250 3200 2250 3100
+Wire Wire Line
+	2250 3100 2500 3100
+Wire Wire Line
+	4000 3100 4000 4950
+Wire Wire Line
+	3750 4700 3750 3100
+Connection ~ 3750 3100
+Wire Wire Line
+	3750 3100 4000 3100
+Wire Wire Line
+	3500 4450 3500 3100
+Connection ~ 3500 3100
+Wire Wire Line
+	3500 3100 3750 3100
+Wire Wire Line
+	3250 4200 3250 3100
+Connection ~ 3250 3100
+Wire Wire Line
+	3250 3100 3500 3100
+Wire Wire Line
+	3000 3950 3000 3100
+Connection ~ 3000 3100
+Wire Wire Line
+	3000 3100 3250 3100
+Wire Wire Line
+	2750 3700 2750 3100
+Connection ~ 2750 3100
+Wire Wire Line
+	2750 3100 3000 3100
+Wire Wire Line
+	2500 3450 2500 3100
+Connection ~ 2500 3100
+Wire Wire Line
+	2500 3100 2750 3100
+Wire Wire Line
+	4000 3100 4000 3000
+Connection ~ 4000 3100
+Wire Wire Line
+	4000 5250 4000 5350
+Connection ~ 4000 5250
+$Comp
+L power:GND #PWR02
+U 1 1 61BCEE4B
+P 4000 5350
+F 0 "#PWR02" H 4000 5100 50  0001 C CNN
+F 1 "GND" H 4005 5177 50  0000 C CNN
+F 2 "" H 4000 5350 50  0001 C CNN
+F 3 "" H 4000 5350 50  0001 C CNN
+	1    4000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 61BCF1F5
+P 4000 3000
+F 0 "#PWR01" H 4000 2850 50  0001 C CNN
+F 1 "+3V3" H 4015 3173 50  0000 C CNN
+F 2 "" H 4000 3000 50  0001 C CNN
+F 3 "" H 4000 3000 50  0001 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3300 6500 3300
+Wire Wire Line
+	2600 3550 4100 3550
+Wire Wire Line
+	4100 3550 4100 3400
+Wire Wire Line
+	4100 3400 6500 3400
+Wire Wire Line
+	2850 3800 4200 3800
+Wire Wire Line
+	4200 3800 4200 3500
+Wire Wire Line
+	4200 3500 6500 3500
+Wire Wire Line
+	3100 4050 4300 4050
+Wire Wire Line
+	4300 4050 4300 3600
+Wire Wire Line
+	4300 3600 6500 3600
+Wire Wire Line
+	6500 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 4300
+Wire Wire Line
+	4400 4300 3350 4300
+Wire Wire Line
+	3600 4550 4500 4550
+Wire Wire Line
+	4500 4550 4500 3800
+Wire Wire Line
+	4500 3800 6500 3800
+Wire Wire Line
+	6500 3900 4600 3900
+Wire Wire Line
+	4600 3900 4600 4800
+Wire Wire Line
+	4600 4800 3850 4800
+Wire Wire Line
+	4100 5050 4700 5050
+Wire Wire Line
+	4700 5050 4700 4000
+Wire Wire Line
+	4700 4000 6500 4000
+$EndSCHEMATC
