@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Display_DirectSoldering")(type "KiCad")(uri "${KIPRJMOD}/Display_DirectSoldering.pretty")(options "")(descr ""))
+)
